@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Montserrat';
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E1FEFE;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  height: 90vh;
+  background: url('images/bg.jpg') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* TITLE */
+
+.hero h1 {
+  margin-top: 75px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+
+  line-height: 59px;
+  letter-spacing: 0.2em; // 3,2px (ou 4px)
+}
+
+/* NAVBAR */
+
+.hero nav {
+  margin-top: 80px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.hero nav ul {  
+  display: flex;
+  gap: 106px;
+}
+
+.hero nav ul li a {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+}
+
+.hero nav ul li a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* Button Hero */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 350px;
+  height: 75px;
+  margin-top: 100px;
+  
+  border: 1px solid #333333;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* Main section (Album) */
+
+.main_section {
+  background-color: #E1FEFE;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-top: 60px;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: 0.2em;
+
+  color: #333333;
+
+  padding-bottom: 64px;
+}
+
+.description ul {
+  display: flex;
+  gap: 16px;
+}
+
+.links_description {
+  color: #BDBDBD;
+
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+}
+
+.links_description:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.active {
+  color: #56CCF2;
+}
+
+.images_sea {
+  width: 80%;
+  padding-top: 60px;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: 300px;
+}
+
+.images_sea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.button_more {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+
+  padding-top: 35px;
+}
+
+.button_more a {
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.2em;
+
+  text-decoration-line: underline;
+
+  color; #4F4F4F;
+}
+
+.button_more a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* About Me  */
+
+.about_me_section {
+  background-color: #E1FEFE;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 148px;
+}
+
+.about_me_infos {
+  background-color: #fff;
+  width: 665px;
+  height: 602px;
+
+  padding-left: 62px;
+}
+
+.about_me_infos h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+
+  color: #828282;
+
+  padding-top: 74px;
+}
+
+.about_me_infos h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.3em;
+
+  color: #333333;
+  
+  padding-top: 38px;
+}
+
+.about_me_infos p {
+  max-width: 75%;
+
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-align: justify;
+
+  color: #828282;
+
+  padding-top: 48px;
+}
+
+.about_me_infos button {
+  background-color: #fff;
+  border: 1px solid #333333;
+  width: 160px;
+  height: 55px;
+  
+  margin-top: 45px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  color: #333333;
+}
+
+.about_me_infos button:hover {
+  cursor: pointer;
+
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/* Instagram feed section */
+
+.instagram_feed_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 246px;
+
+  background: linear-gradient(
+    180deg, #E1FEFE 0%,
+    rgba(163, 215, 253, 0) 100%);
+}
+
+.instagram_feed_section h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: 0.2em;
+
+  color: #333333;
+}
+
+.instagram_feed_images {
+  display: flex;
+  gap: 31px;
+
+  padding-top: 86px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(
+    180deg, rgba(145, 219, 225, 0) -28.19%,
+    rgba(174, 237, 242, 0.226114) 11.93%,
+    rgba(62, 249, 237, 0.445) 39.24%), 
+    url('images/footer.jpg') 
+    no-repeat center center;
+  background-size: 100% 100%;
+  
+  margin-top: 140px;
+}
+
+.footer h1 {
+  padding-top: 30%;
+  padding-left: 10%;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 0.2em;
+
+  color: #fff;
+}
+
+.footer p {
+  padding-top: 30px;
+  padding-left: 10%;
+
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+
+  color: #fff;
+}
+
+.footer .icons {
+  display: flex;
+
+  padding-top: 32px;
+  padding-left: 10%;
+  gap: 29px;
+}
+
+.footer h2 {
+  padding-left: 80%;
+
+  font-family: 'Sacramento';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 70px;
+
+  color: #fff;
+}
