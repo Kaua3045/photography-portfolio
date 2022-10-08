@@ -2,7 +2,7 @@
 
 <img src="images/exhibition/introduction.png" alt="Imagem for introduction"/>
 
-### Para acessar a aplicação clique <a href="link">aqui</a>
+### Para acessar a aplicação clique <a href="https://photography-portfolio-example.netlify.app/">aqui</a>
 
 #### Descrição:
 
