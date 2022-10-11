@@ -133,7 +133,7 @@ ul, li {
   padding-bottom: 64px;
 }
 
-.description ul {
+/* .description ul {
   display: flex;
   gap: 16px;
 }
@@ -149,13 +149,28 @@ ul, li {
 .links_description:hover {
   opacity: 0.7;
   transition: 0.3s;
+} */
+
+.btn_container {
+  display: flex;
+  gap: 16px;
 }
 
-.active {
-  color: #56CCF2;
+.btn {
+  border: none;
+  background-color: #E1FEFE;
+  color: #BDBDBD;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
-.images_sea {
+.btn:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.images_display {
   width: 80%;
   padding-top: 60px;
   display: inline-grid;
@@ -164,7 +179,7 @@ ul, li {
   grid-auto-rows: 300px;
 }
 
-.images_sea img {
+.images_display img {
   width: 100%;
   height: 100%;
   object-fit: cover;
